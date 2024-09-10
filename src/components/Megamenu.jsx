@@ -1,6 +1,7 @@
 import React from 'react'
 import { navData, models } from './Data'
-import Carousel from 'react-elastic-carousel';
+import Carousel from '@itseasy21/react-elastic-carousel';
+import 'react-elastic-carousel/dist/index.css'; 
 import { Link } from 'react-router-dom';
 
 
