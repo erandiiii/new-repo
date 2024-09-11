@@ -68,7 +68,7 @@
 
                     }
 
-                    .au-mm-container{
+                    .au-mm-container {
                         display: flex;
                     }
                 }
@@ -139,7 +139,7 @@
 
                                         color: black;
                                         line-height: 1.5rem;
-                                       font-family: Arial, Helvetica, sans-serif;
+                                        font-family: Arial, Helvetica, sans-serif;
                                     }
                                 }
                             }
@@ -189,7 +189,8 @@
                                 }
                             }
                         }
-                        button{
+
+                        button {
                             background-color: #111;
                             font-family: sans-serif;
                             color: white;
@@ -221,7 +222,7 @@
                     left: 0%;
                     height: 30rem;
                     display: none;
-                   
+
                     transition: .2s ease-in;
 
                     .mm-left {
@@ -358,10 +359,10 @@
                     .cardss {
                         justify-content: center;
                         border: 1px solid lightgray;
-                        width: 90% !important;
+                        width: 80% !important;
                         padding: 1% 0;
                         height: 19.5rem;
-                        
+
 
                         &:hover {
                             background-color: #111;
@@ -375,13 +376,13 @@
                     .card-image {
                         display: flex;
                         justify-content: center;
-                      
+
                     }
 
                     img {
                         height: 12.5rem;
                         width: 95%;
-                        
+
                     }
 
                     .card-details {
@@ -934,7 +935,33 @@
         }
 
     }
+
 }
+
+@media(max-width:1500px) {
+    .au-mm-container {
+
+        .am-left{
+            width: 60% !important;
+        }
+            .top{
+                justify-content: space-around !important;
+            }
+            .am-img1 {
+                width: 40% !important;
+            }
+            .am-img2 {
+                width: 40% !important;
+                transform:none !important;
+                transform: rotate(0deg);
+                position: unset !important;
+            }
+
+        
+    }
+}
+
+
 
 @media(max-width:1150px) {
     .mengamenu-container {
