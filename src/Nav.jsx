@@ -34,6 +34,12 @@ const Nav = () => {
     const toggleBackground = () => {
         setIsBlack(!isBlack);
     };
+
+    const handleBackgroundClick = () => {
+        
+        toggleSidebar(); 
+        toggleBackground(); 
+    };
     return (
         <div className='nav' >
             <div className="nav-container">
@@ -206,12 +212,14 @@ const Nav = () => {
 
                         </div>
                     </div>
-                    <div className={`mn-background ${isBlack ? 'open' : ''}`} >
+                    <div className={`mn-background ${isBlack ? 'open' : ''}`}  onClick={isBlack ? handleBackgroundClick : ''}>
+                        
                     </div>
                 </div>
             </div>
         </div >
     )
 }
+
 
 export default Nav

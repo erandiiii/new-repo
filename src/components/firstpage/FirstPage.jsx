@@ -52,7 +52,7 @@ const FirstPage = () => {
                     </svg>
                     <IoIosArrowRoundForward className='arrow-icon'
                         color='white'
-                        fontSize={40}
+                        fontSize={60}
                     />
                 </Link>
                 <div className='fp-img'></div>

@@ -1,326 +1,289 @@
-.au-container{
+.au-container {
     align-items: stretch;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
+    flex-direction: row;
     justify-content: space-around;
-    padding: 5%;
-    // width: 100%;
-    
-    .au-text{
+    // padding: 5%;
+    width: 100%;
+    // height: 100%;
+
+    .au-text {
         align-items: flex-start;
         display: flex;
         flex-direction: column;
-        gap: max(.25rem,1.5vh);
+        gap: max(.25rem, 1.5vh);
         justify-content: flex-start;
-        padding: 10rem 0;
+        padding: 0 1%;
         position: relative;
-        width: 35%;
+        width: 30%;
         margin-left: 4rem;
-        margin-top: -1.5rem;
+        margin-top: 12%;
+        margin-left: 8%;
 
-        h1{
+        h1 {
             font-family: 'Brown Sugar', sans-serif;
             line-height: 1.4;
             font-weight: 500;
-            font-size: max(30px,5vw);
+            font-size: max(30px, 5vw);
             margin-bottom: -.4rem;
-            color:#111;
+            color: #111;
         }
-        p{
-            font-size: max(14px,1vw);
-            line-height: max(30px,2.5vw);
+
+        p {
+            font-size: max(14px, 1vw);
+            line-height: max(30px, 2.5vw);
             color: #111;
             opacity: 80%;
         }
 
-        .svg-ja{
+        .svg-ja {
             transition: .2s ease-in;
             position: absolute;
-            top: 70%;
-            left: 65%;
-            &:hover{
+            top: -28%;
+            left: 108%;
+            z-index: 30;
+
+            &:hover {
                 transform: rotate(60deg);
             }
         }
 
-        .arrow-icon{
+        .arrow-icon {
             position: absolute;
-            bottom:10%;
-            left: 81%;
-         
+            top: -15%;
+            left: 123%;
+            z-index: 30;
+
         }
     }
 
-    .au-right{
+    .au-right {
         align-items: center;
         display: flex;
+        height: 100vh !important;
         justify-content: center;
-        position: relative;
-        width: 55%;
-        margin-top: -30rem;
+        width: 50%;
+        overflow: hidden !important;
+        // position: relative;
 
-
-        .img-holder{
-            align-items: stretch;
+        .divi {
             display: flex;
-            gap: max(.5rem,1vw);
-            padding: max(2rem,3vw);
-            position: relative;
-            width: 80%;
-
-            .au-card1{
-                background-color: white;
-                border: 1px solid lightgray;
-                display: flex;
-                flex-direction: column;
-                gap: max(1rem,1vw);
-                padding: max(.5rem,1vw);
-                position: absolute;
-                transition: .2s ease-out;
-                width: max(10rem,22vw);
-                left: 5%;
-                top: 36%;
-                z-index: 3; 
-
-                &:hover{
-                    z-index: 10;
-                    transform: scale(1.1);
-                    background-color: #111;
-                    color: white;
-                    border: none;
-                }
-                .card1-img{
-                    background-position: 50% 50%;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-image: url('../../assets/au-card1.png');
-                    height: max(10rem,20vw);
-                }
-
-                .card1-content{
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    gap: max(.5rem,1vw);
-                    width: 100%;
-                    
-
-                    h3{
-                        font-family: 'Brown Sugar', sans-serif;
-                        line-height: 0;
-                        font-weight: 500;
-                        font-size: max(20px,1.5vw);
-                        margin-bottom: .8rem;
-                    }
-                    .content-row{
-                        align-items: center;
-                        display: flex;
-                        flex-wrap: wrap;
-                        // gap: max(10px,.25vw);
-                        justify-content: space-evenly;
-                        margin-bottom: -1rem;
-                        width: 100%;
-                        p{
-                            font-size: 18px;
-                        }
-                    }
-                    .data{
-                        margin-bottom: 2rem;
-                    }
-                }
-            }
-
-            .au-card2{
-                border: 1px solid lightgray;
-                display: flex;
-                flex-direction: column;
-                gap: max(1rem,1vw);
-                padding: max(.5rem,1vw);
-                position: absolute;
-                transition: .2s ease-out;
-                width: max(10rem,22vw);
-                background-color: white;
-                left: 40%;
-                top: 83%;
-                z-index: 2;
-
-                &:hover{
-                    z-index: 10;
-                    transform: scale(1.1);
-                    background-color: #111;
-                    color: white;
-                    border: none;
-                }
-
-                .card2-img{
-                    background-position: 50% 50%;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-image: url('../../assets/au-card2.png');
-                    height: max(10rem,20vw);
-                }
-                .card2-content{
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    gap: max(.5rem,1vw);
-                    width: 100%;
-
-                    h3{
-                        font-family: 'Brown Sugar', sans-serif;
-                        line-height: 0;
-                        font-weight: 500;
-                        font-size: max(20px,1.5vw);
-                        margin-bottom: .8rem;
-                    }
-                    .content2-row{
-                        align-items: center;
-                        display: flex;
-                        flex-wrap: wrap;
-                        // gap: max(10px,.25vw);
-                    
-                        justify-content: space-evenly;
-                        margin-bottom: -1rem;
-                        width: 100%;
-                        p{
-                            font-size: 18px;
-                        }
-
-                    }
-                        .data1{
-                            margin-bottom: 2rem;
-                        }
-                   
-                }
-            }
-        }
-    }
-}
-@media(max-width:1600px){
-    .au-container{
-        .au-text {
-            .arrow-icon{
-                left: 85%;
-                bottom: 8%;
-            }
-        }
-    } 
-}
-@media(max-width:1200px){
-    .au-container{
-        .au-text {
-            .arrow-icon{
-                left: 91%;
-                bottom: 6%;
-            }
-        }
-    } 
-}
-@media(max-width:1000px){
-    .au-container{
-        .au-text {
-            .arrow-icon{
-                left: 96%;
-                bottom: 5%;
-            }
-        }
-    } 
-}
-@media(max-width:955px){
-    .au-container{
-        .au-text{
             width: 100%;
-            align-items: center;
-            margin-top: -10REM;
-            h1 {
-                font-size: 3rem;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            .hbMISa{
+                height: 100% !important;
             }
-            p{
-                font-size: 1.2rem;
-            }
-            .svg-ja{
-                display: none;
-            }
-                .arrow-icon{
-                    display: none;
-                }
-            
-        }
-        .au-right{
-            // width: 100%;
-            justify-content: center;
-            margin-top: -10rem;
             
 
-            .img-holder{
+            .arrow-button.NEXT {
+                display: none !important;
+            }
+
+            .arrow-button.PREV {
+                display: none !important;
+            }
+
+            .rec-pagination {
+                position: absolute;
+                bottom:  14%;
+                left: 6%;
+            }
+
+        }
+
+
+        .cardss {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid lightgray;
+            width: 95% !important;
+            padding: 1% 0;
+           
+
+           
+
+            .card-image {
+                padding:1% 4%;
+                margin-top: 1.5rem;
+
+                .imgja {
+                    width: 100%;
+                    height: 23.5rem;
+                    // margin-top: -1rem !important;
+                }
+            }
+
+            .card-details {
                 display: flex;
-                // justify-content: space-around;
+                flex-direction: column;
                 align-items: center;
 
-                .au-card1{
-                    width: 65%;
+                h3 {
+                    font-size: 1.8rem;
                     
+                    margin-bottom: 2%;
+                    font-family: 'Brown Sugar', sans-serif;
                 }
-                .au-card2{
-                    width: 65%;
+
+                .real-p {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 2%;
+                    gap: 1.2rem;
+                    font-family: sans-serif;
+
+                    p {
+                        font-size: 1.2rem;
+                    }
                 }
+
+                .date {
+                    margin-top: 1%;
+                    font-size: 1.6rem;
+                    font-family: 'Brown Sugar', sans-serif;
+                }
+
+            }
+        }
+
+        .card-1 {
+            position: absolute;
+            background-color: white;
+            top: 23%;
+            left: 1.5%;
+            z-index: 4 !important;
+            width: 14% !important;
+            height: 33rem !important;
+            &:hover{
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
+            }
+        }
+
+        .card-2 {
+            position: absolute;
+            background-color: white;
+            top: 34.5%;
+            left: 11%;
+            width: 14% !important;
+            height: 33rem !important;
+            &:hover{
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
+            }
+        }
+        .card-3 {
+            position: absolute;
+        
+            width: 14% !important;
+            height: 33rem !important;
+            top: 23%;
+            &:hover{
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
+            }
+            
+            
+        }
+
+        .card-4 {
+            position: absolute;
+            
+            width: 14% !important;
+            height: 33rem !important;
+            top: 35%;
+            &:hover{
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
             }
         }
     }
-}
-@media(max-width:700px){
-    .au-container{
-        .au-right{
-            width: 100%;
-            .img-holder{
-                width: 100%;
-                justify-content: center;
-                
-                align-items: center !important;
-                .au-card1{
-                    position: unset;
-                    width: 80%;
-                }
-                .au-card2{
-                    position: unset;
-                    width: 80%;
-                }
-            }
-        }
-    }
-}
-@media(max-width:550px){
-    .au-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    @media (max-width:1300px) {
         .au-text{
+            width: 60% !important;
             align-items: center;
-            justify-content: center;
-            width: 100%;
-            display: flex;
-            margin-right: 1rem;
-           
+            padding: 1 5%;
+            h1{
+                font-size: 5rem !important;
+            }
+            p{
+                font-size: 1.5rem;
+            }
         }
-        .au-right{
-            width: 100%;
-            padding:0;
-            .img-holder{
-                margin-left: 1rem;
-                width: 100%;
-                justify-content: center !important;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center !important;
-                .au-card1{
-                    position: unset;
-                    width: 90%;
+        .svg-ja{
+            display: none;
+        }
+            .arrow-icon{
+                display: none;
+            }
+       .au-right{
+        margin-left: 5rem;
+        width: 80% !important;
+        justify-content: center !important;
+        align-items: center !important;
+       }
+       
+        
+        .divi{
+            .rec-pagination{
+                top: 90%;
+                
+            }
+        }
+        
+    }
+
+    @media(max-width:1600px) {
+        .au-container {
+            .au-text {
+                width: 50% !important;
+                .arrow-icon {
+                    left: 122%;
+                    top: 16.5% !important;
                 }
-                .au-card2{
-                    position: unset;
-                    width: 90%;
+            }
+        }
+    }
+
+    @media(max-width:1200px) {
+        .au-container {
+            .au-text {
+                width: 100% !important;
+                padding: 0 !important;
+                .arrow-icon {
+                    left: 128%;
+                    top: 18% !important;
+                }
+            }
+        }
+    }
+
+    @media(max-width:1000px) {
+        .au-container {
+            .au-text {
+                .arrow-icon {
+                    left: 132%;
+                    top: 19% !important;
                 }
             }
         }
     }
 }
+
+    

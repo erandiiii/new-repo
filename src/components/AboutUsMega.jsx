@@ -22,8 +22,8 @@ const AboutUsMega = () => {
             </div>
             <div className="am-right">
                 <div className='top'>
-                <div className='am-img1'></div>
-                <div className="am-img2"></div>
+                <div  className='am-img1'></div>
+                <div  className="am-img2"></div>
                 </div>
                 
                 <button>About us</button>

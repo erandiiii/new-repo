@@ -64,14 +64,25 @@
                     }
 
                     .mengamenu-container {
-                        display: flex;
+                        opacity: 1;
+                        visibility: visible;
+                        transition-delay: 0s;
 
                     }
 
                     .au-mm-container {
-                        display: flex;
+                        opacity: 1;
+                        visibility: visible;
+                        transition-delay: 0s;
                     }
                 }
+
+                .nav-link:not(:hover) {
+                    .mengamenu-container {
+                        transition-delay: 1s;
+                    }
+                }
+
 
                 a {
                     align-items: center;
@@ -99,9 +110,11 @@
                     left: 25%;
                     width: 50%;
                     height: 30rem;
-                    display: none;
+                    // display: none;
+                    opacity: 0;
+                    visibility: hidden;
                     margin: 0;
-                    transition: .2s ease-in;
+                    transition: opacity 0.2s ease, visibility 0.2s ease;
                     padding: 1.5% 0%;
 
                     .am-left {
@@ -221,9 +234,11 @@
                     top: 8.8%;
                     left: 0%;
                     height: 30rem;
-                    display: none;
+                    // display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.2s ease, visibility 0.2s ease;
 
-                    transition: .2s ease-in;
 
                     .mm-left {
 
@@ -836,8 +851,8 @@
                     position: fixed;
                     top: 0;
                     width: 100%;
-                    z-index: 7000 !important;
-                    pointer-events: none !important;
+                    z-index: 8000 !important;
+
                     display: none;
                 }
 
@@ -941,23 +956,26 @@
 @media(max-width:1500px) {
     .au-mm-container {
 
-        .am-left{
+        .am-left {
             width: 60% !important;
         }
-            .top{
-                justify-content: space-around !important;
-            }
-            .am-img1 {
-                width: 40% !important;
-            }
-            .am-img2 {
-                width: 40% !important;
-                transform:none !important;
-                transform: rotate(0deg);
-                position: unset !important;
-            }
 
-        
+        .top {
+            justify-content: space-around !important;
+        }
+
+        .am-img1 {
+            width: 40% !important;
+        }
+
+        .am-img2 {
+            width: 40% !important;
+            transform: none !important;
+            transform: rotate(0deg);
+            position: unset !important;
+        }
+
+
     }
 }
 
