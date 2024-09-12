@@ -15,6 +15,24 @@ const Nav = () => {
     const [isDdOpen, setIsDdOpen] = useState(false);
     const [isDdOpen1, setIsDdOpen1] = useState(false);
 
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {  
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
    
 
     const toggleDropdown = () => {
@@ -41,7 +59,7 @@ const Nav = () => {
         toggleBackground(); 
     };
     return (
-        <div className='nav' >
+        <div className={scrolled ? 'nav scrolled' : 'nav'} >
             <div className="nav-container">
                 <Link className='nav-logo' >
                     <img src={logo1} alt="" />
@@ -79,6 +97,7 @@ const Nav = () => {
                     </div>
                     <div className="auth-link1">
                         <Link>
+                        <div className="link-bg"></div>
                             <p>Contacts</p>
                         </Link>
                     </div>
