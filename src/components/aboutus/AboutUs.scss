@@ -73,10 +73,11 @@
             height: 100%;
             overflow: hidden;
             position: relative;
-            .hbMISa{
+
+            .hbMISa {
                 height: 100% !important;
             }
-            
+
 
             .arrow-button.NEXT {
                 display: none !important;
@@ -88,7 +89,7 @@
 
             .rec-pagination {
                 position: absolute;
-                bottom:  14%;
+                bottom: 8%;
                 left: 6%;
             }
 
@@ -100,14 +101,14 @@
             flex-direction: column;
             justify-content: center;
             border: 1px solid lightgray;
-            width: 95% !important;
+            // width: 95% !important;
             padding: 1% 0;
-           
 
-           
+
+
 
             .card-image {
-                padding:1% 4%;
+                padding: 1% 4%;
                 margin-top: 1.5rem;
 
                 .imgja {
@@ -124,7 +125,7 @@
 
                 h3 {
                     font-size: 1.8rem;
-                    
+
                     margin-bottom: 2%;
                     font-family: 'Brown Sugar', sans-serif;
                 }
@@ -151,14 +152,19 @@
         }
 
         .card-1 {
+
             position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
             background-color: white;
             top: 23%;
             left: 1.5%;
-            z-index: 4 !important;
-            width: 14% !important;
-            height: 33rem !important;
-            &:hover{
+            z-index: 4;
+            width: 28rem;
+            height: 35rem;
+
+            &:hover {
                 z-index: 10;
                 transform: scale(1);
                 background-color: #111;
@@ -170,11 +176,15 @@
         .card-2 {
             position: absolute;
             background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
             top: 34.5%;
             left: 11%;
-            width: 14% !important;
-            height: 33rem !important;
-            &:hover{
+            width: 28rem;
+            height: 35rem;
+
+            &:hover {
                 z-index: 10;
                 transform: scale(1);
                 background-color: #111;
@@ -182,30 +192,33 @@
                 border: none;
             }
         }
+
         .card-3 {
             position: absolute;
-        
+
             width: 14% !important;
             height: 33rem !important;
             top: 23%;
-            &:hover{
+
+            &:hover {
                 z-index: 10;
                 transform: scale(1);
                 background-color: #111;
                 color: white;
                 border: none;
             }
-            
-            
+
+
         }
 
         .card-4 {
             position: absolute;
-            
+
             width: 14% !important;
             height: 33rem !important;
             top: 35%;
-            &:hover{
+
+            &:hover {
                 z-index: 10;
                 transform: scale(1);
                 background-color: #111;
@@ -214,76 +227,164 @@
             }
         }
     }
+    @media(max-width:1600px) {
+        .svg-ja{
+            top: -25%!important;
+            left: 105% !important;
+        }
+        .arrow-icon{
+            top: -11% !important;
+        }
+    }
+
     @media (max-width:1300px) {
-        .au-text{
+        .au-text {
             width: 60% !important;
             align-items: center;
             padding: 1 5%;
-            h1{
+
+            h1 {
                 font-size: 5rem !important;
             }
-            p{
+
+            p {
                 font-size: 1.5rem;
             }
         }
-        .svg-ja{
+
+        .svg-ja {
             display: none;
         }
-            .arrow-icon{
-                display: none;
-            }
-       .au-right{
-        margin-left: 5rem;
-        width: 80% !important;
-        justify-content: center !important;
-        align-items: center !important;
-       }
-       
-        
-        .divi{
-            .rec-pagination{
+
+        .arrow-icon {
+            display: none;
+        }
+
+        .au-right {
+            // margin-left: 5rem;
+            width: 80% !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+
+        .divi {
+            .rec-pagination {
                 top: 90%;
-                
-            }
-        }
-        
-    }
 
-    @media(max-width:1600px) {
-        .au-container {
-            .au-text {
-                width: 50% !important;
-                .arrow-icon {
-                    left: 122%;
-                    top: 16.5% !important;
-                }
             }
         }
-    }
 
-    @media(max-width:1200px) {
-        .au-container {
-            .au-text {
-                width: 100% !important;
-                padding: 0 !important;
-                .arrow-icon {
-                    left: 128%;
-                    top: 18% !important;
-                }
-            }
-        }
     }
-
-    @media(max-width:1000px) {
-        .au-container {
-            .au-text {
-                .arrow-icon {
-                    left: 132%;
-                    top: 19% !important;
-                }
-            }
-        }
-    }
-}
 
     
+        @media(max-width:1200px) {
+            .au-container {
+                .au-text {
+                    width: 100% !important;
+                    padding: 0 !important;
+
+                    .arrow-icon {
+                        left: 128%;
+                        top: 18% !important;
+                    }
+                }
+            }
+        }
+
+        @media(max-width:1000px) {
+            .au-container {
+                .au-text {
+                    .svg-ja {}
+
+                    .arrow-icon {
+                        left: 132%;
+                        top: 19% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width:900px) {
+
+        .divi {
+            .rec-pagination {
+                top: 75% !important;
+                left: 43% !important;
+
+            }
+
+            .cardss {
+                position: static !important;
+                width: 100% !important;
+                height: 37rem !important;
+                display: flex !important;
+
+            }
+
+            .card-1 {
+
+                position: static !important;
+                width: 28rem !important;
+                margin-right: 1rem;
+
+            }
+
+            .card-2 {
+                position: static !important;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    @media(max-width:700px) {
+        .au-container {
+            .au-right {
+                // width: 100% !important;
+                margin: 0;
+
+                .divi {
+                    .rec-pagination {
+                        top: 75% !important;
+                        left: 37% !important;
+
+                    }
+                }
+
+                .cardss {
+                    margin-left: 2rem;
+                    // width: 18rem !important;
+                }
+
+                .card-1 {
+                    // width: 16rem !important;
+                }
+            }
+        }
+    }
+
+ 
+    @media(max-width:300px){
+    
+     .au-container{
+        .au-right{
+            .divi{
+                .rec-pagination{
+                    left: 23% !important;
+                }
+            }
+        }
+     }
+        
+        .au-text{
+            align-items: center !important;
+            text-align: center;
+        }
+        .cardss{
+            margin-left: 3rem !important;
+        }
+       
+            
+        
+    }
