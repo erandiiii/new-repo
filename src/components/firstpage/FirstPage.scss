@@ -298,6 +298,9 @@
 
             .text {
                 align-items: center;
+                h1{
+                    font-size: 5rem !important;
+                }
             }
         }
 
@@ -334,6 +337,11 @@
                     width: 40%;
                 }
             }
+            .text{
+                h1{
+                    font-size: 4rem !important;
+                }
+            }
 
         }
 
@@ -361,6 +369,11 @@
             width: 100% !important;
             // margin-bottom: 2rem;
             
+            .text{
+                h1{
+                    font-size: 3rem !important;
+                }
+            }
             
 
             .fp-input {
@@ -389,3 +402,21 @@
         }
     }
 }
+
+@media(max-width:420px) {
+    .hp-container {
+       
+        
+
+        .fp-left {
+          
+            
+            .text{
+                h1{
+                    font-size: 2rem !important;
+                }
+            }
+        }
+    }
+}
+            
