@@ -102,7 +102,7 @@
 
             .rec-pagination {
                 position: absolute;
-                bottom: 18%;
+                bottom: 12%;
                 left: 6%;
             }
 
@@ -162,7 +162,7 @@
                 .imgja {
                     width: 100%;
                     height: 23.5rem;
-                    margin-top: -1rem !important;
+
                 }
             }
 
@@ -229,6 +229,7 @@
             flex-direction: row;
             top: 24%;
             left: 11%;
+
             width: 28rem;
             height: 33rem;
 
@@ -243,10 +244,12 @@
 
         .card-3 {
             position: absolute;
-
-            width: 14% !important;
-            height: 33rem !important;
-            top: 23%;
+            background-color: white;
+            z-index: 4;
+            width: 28rem;
+            height: 33rem;
+            top: 16%;
+            left: 26.5%;
 
             &:hover {
                 z-index: 10;
@@ -262,9 +265,11 @@
         .card-4 {
             position: absolute;
 
-            width: 14% !important;
-            height: 33rem !important;
-            top: 35%;
+            width: 28rem;
+            height: 33rem;
+            top: 24%;
+            left: 36%;
+
 
             &:hover {
                 z-index: 10;
@@ -274,6 +279,94 @@
                 border: none;
             }
         }
+
+        .card-5 {
+            position: absolute;
+            background-color: white;
+            z-index: 4;
+            width: 28rem;
+            height: 33rem;
+            top: 16%;
+            left: 51.5%;
+
+
+            &:hover {
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
+            }
+        }
+
+        .card-6 {
+            position: absolute;
+            width: 28rem;
+            height: 33rem;
+            top: 24%;
+            left: 61% !important;
+
+
+            &:hover {
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
+            }
+        }
+
+        .card-7 {
+            position: absolute;
+            z-index: 4;
+            background-color: #fff;
+            width: 28rem;
+            height: 33rem;
+            top: 16%;
+            left: 76.6%;
+
+
+            &:hover {
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
+            }
+        }
+
+        .card-8 {
+            position: absolute;
+
+            width: 28rem;
+            height: 33rem;
+            top: 24%;
+            left: 86%;
+
+
+            &:hover {
+                z-index: 10;
+                transform: scale(1);
+                background-color: #111;
+                color: white;
+                border: none;
+            }
+        }
+
+        .card-1 .imgja,
+        .card-2 .imgja {
+            margin-top: -1.5rem;
+        }
+        .card-3 .imgja,
+        .card-4 .imgja,
+        .card-5 .imgja,
+        .card-6 .imgja,
+        .card-7 .imgja,
+        .card-8 .imgja{
+            margin-top: 1rem;
+        }
+
+
     }
 
     @media(max-width:1600px) {
