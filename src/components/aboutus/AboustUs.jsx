@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './AboutUs.scss';
 import { models } from '../Data';
-import Carousel from '@itseasy21/react-elastic-carousel';
+import Carousel from 'react-elastic-carousel';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
 
