@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './AboutUs.scss';
 import { models } from '../Data';
-import Carousel from '@itseasy21/react-elastic-carousel';
+import Carousel from 'react-elastic-carousel';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
 
@@ -16,29 +16,6 @@ const AboustUs = () => {
         { width: 1200, itemsToShow: 2 },
     ];
 
-    const CustomArrow = ({ type, onClick, isEdge }) => {
-        return (
-            <div
-                onClick={onClick}
-                className={`arrow-button ${type}`}
-                style={{
-                    background: "white",
-                    border: "1px solid black",
-                    width: "15px",
-                    height: "15px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    cursor: isEdge ? "not-allowed" : "pointer",
-                }}
-            >
-                <span style={{ color: "black", fontSize: "10px" }}>
-                    {type === 'next' ? '>' : '<'}
-
-                </span>
-            </div>
-        );
-    };
     return (
         <div className='au-container'>
             <div className="au-text">
@@ -61,13 +38,9 @@ const AboustUs = () => {
             <div className="au-right">
                 <Carousel className='divi'
                     pagination={true}
-                    
                     breakPoints={breakPoints}
-                    renderArrow={({ type, onClick, isEdge }) => (
-                        <CustomArrow type={type} onClick={onClick} isEdge={isEdge} />
-                    )}
                 >
-                    {models.map((model) => (
+                     {models.map((model) => (
                         <div key={model.id} className={`cardss card-${model.id}`}>
                             <div className="card-image">
                                 <img className='imgja' src={model.image} alt={model.name} />

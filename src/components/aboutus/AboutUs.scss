@@ -75,6 +75,16 @@
             height: 100%;
             overflow: hidden;
             position: relative;
+            .rec {
+                &.rec-arrow {
+                  &.rec-arrow-left {
+                    display: none;
+                  }
+                  &.rec-arrow-right {
+                    display: none;
+                  }
+                }
+              }
 
             .hbMISa {
                 height: 100% !important;
@@ -206,7 +216,7 @@
             flex-wrap: wrap;
             flex-direction: row;
             background-color: white;
-            top: 23%;
+            top: 16%;
             left: 1.5%;
             z-index: 4;
             width: 28rem;
@@ -227,7 +237,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            top: 30%;
+            top: 24%;
             left: 11%;
 
             width: 28rem;
