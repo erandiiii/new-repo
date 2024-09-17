@@ -75,30 +75,22 @@
             height: 100%;
             overflow: hidden;
             position: relative;
+
             .rec {
                 &.rec-arrow {
-                  &.rec-arrow-left {
-                    display: none;
-                  }
-                  &.rec-arrow-right {
-                    display: none;
-                  }
+                    &.rec-arrow-left {
+                        display: none;
+                    }
+
+                    &.rec-arrow-right {
+                        display: none;
+                    }
                 }
-              }
-
-            .hbMISa {
-                height: 100% !important;
             }
 
-            .fOlfLS {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                height: 100% !important;
-            }
 
             .uwwmx {
-                height: 100%;
+                height: 100% !important;
             }
 
 
@@ -367,14 +359,15 @@
         .card-2 .imgja {
             margin-top: -1.5rem;
         }
+
         .card-3 .imgja,
         .card-4 .imgja,
         .card-5 .imgja,
         .card-6 .imgja,
         .card-7 .imgja,
-        .card-8 .imgja{
+        .card-8 .imgja {
             margin-top: 1rem;
-            
+
         }
 
 
