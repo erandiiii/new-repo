@@ -1,5 +1,6 @@
 .au-container {
     align-items: stretch;
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap !important;
     flex-direction: row;
@@ -15,10 +16,10 @@
         gap: max(.25rem, 1.5vh);
         justify-content: flex-start;
         padding: 0 1%;
-        position: relative;
+
         width: 30%;
         margin-left: 4rem;
-        margin-top: 12%;
+        margin-top: 10.5%;
         margin-left: 8%;
 
         h1 {
@@ -37,88 +38,101 @@
             opacity: 80%;
         }
 
+
+    }
+
+    .au-right {
+        height: 100vh !important;
+        width: 55%;
+        padding: 0 5% !important;
+        height: 100vh !important;
+        padding: 0 !important;
+        margin-bottom : 2% !important;
+        overflow: hidden !important;
+
+        a {
+            position: relative !important;
+            z-index: 1000;
+        }
+
+
         .svg-ja {
             transition: .2s ease-in;
             position: absolute;
-            top: -35%;
-            left: 111%;
-            z-index: 30;
-
-
+            top: -1rem;
+            left: 1.5rem;
+            z-index: 40;
+            line-height: 1rem !important;
 
             &:hover {
-                transform: rotate(60deg);
+                transform: rotate(70deg);
             }
         }
 
         .arrow-icon {
+
             position: absolute;
-            top: -21.5%;
-            left: 123%;
+            top: 4.8rem !important;
+            left: 7.5rem !important;
             z-index: 30;
-
         }
-    }
 
-    .au-right {
-        align-items: center;
-        display: flex;
-        height: 100vh !important;
-        justify-content: center;
-        width: 50%;
-        overflow: hidden !important;
-        // position: relative;
+
+
 
         .divi {
-            display: flex;
-            width: 100%;
+            padding: 0;
+            // height: 100vh !important;
             height: 100%;
-            overflow: hidden;
             position: relative;
-            .rec {
-                &.rec-arrow {
-                  &.rec-arrow-left {
-                    display: none;
-                  }
-                  &.rec-arrow-right {
-                    display: none;
-                  }
-                }
-              }
+            margin-left: 4.5rem;
+
+            .carousel-container {
+                position: relative !important;
+                overflow: hidden !important;
+            }
+
+
+
+            .fOlfLS {
+                height: 100% !important;
+            }
 
             .hbMISa {
                 height: 100% !important;
             }
 
-            .fOlfLS {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                height: 100% !important;
-            }
+
 
             .uwwmx {
                 height: 100%;
             }
 
 
-            .arrow-button.NEXT {
-                display: none !important;
-            }
 
-            .arrow-button.PREV {
-                display: none !important;
-            }
 
-            .rec-pagination {
-                position: absolute;
-                bottom: 12%;
-                left: 6%;
+            .rec {
+                &.rec-arrow {
+                    &.rec-arrow-left {
+                        display: none;
+                    }
+
+                    &.rec-arrow-right {
+                        display: none;
+                    }
+                }
+
+                .rec-carousel {
+                    position: relative !important;
+                }
+
+
             }
 
             .rec-dot {
                 margin-top: 1rem;
-                background-color: lightgrey;
+                background-color: lightgray;
+                box-shadow: none;
                 outline: none;
                 border: none;
 
@@ -130,9 +144,14 @@
                 }
             }
 
+            .rec-pagination {
+                position: absolute;
+                bottom: 18.5% !important;
+                left: 4.5% !important;
+            }
 
             .rec-dot_active {
-                margin-top: .9245rem;
+                margin-top: 17%;
                 color: #111;
                 background-color: #111;
                 border: none;
@@ -150,326 +169,331 @@
                 }
             }
 
-        }
-
-
-        .cardss {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 1px solid lightgray;
-            height: 38.5rem;
-            // width: 95% !important;
-            padding: 1% 0;
 
 
 
+            .cardss {
 
-            .card-image {
-                padding: 1% 4%;
-                // margin-top: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                justify-content: center;
 
-                .imgja {
-                    width: 100%;
-                    height: 23.5rem;
 
-                }
+            }
+
+            .imgja {
+                height: 24rem;
+                margin-top: 3%;
             }
 
             .card-details {
+                width: 100%;
+                height: 30%;
                 display: flex;
+                margin-bottom: 1rem;
                 flex-direction: column;
-                align-items: center;
+                align-items: center !important;
+                justify-content: center !important;
 
                 h3 {
-                    font-size: 1.8rem;
-
-                    margin-bottom: 2%;
                     font-family: 'Brown Sugar', sans-serif;
-                }
-
-                .real-p {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 2%;
-                    gap: 1.2rem;
-                    font-family: sans-serif;
-
-                    p {
-                        font-size: 1.2rem;
-                    }
+                    font-size: 2rem;
+                    // padding-top: 1rem;
                 }
 
                 .date {
-                    margin-top: 1%;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     font-family: 'Brown Sugar', sans-serif;
                 }
 
             }
-        }
 
-        .card-1 {
-
-            position: absolute;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            background-color: white;
-            top: 16%;
-            left: 1.5%;
-            z-index: 4;
-            width: 28rem;
-            height: 33rem;
-
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
-            }
-        }
-
-        .card-2 {
-            position: absolute;
-            background-color: white;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            top: 24%;
-            left: 11%;
-
-            width: 28rem;
-            height: 33rem;
-
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
-            }
-        }
-
-        .card-3 {
-            position: absolute;
-            background-color: white;
-            z-index: 4;
-            width: 28rem;
-            height: 33rem;
-            top: 16%;
-            left: 26.5%;
-
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
+            .real-p {
+                display: flex;
+                justify-content: space-between;
+                gap: 1.2rem;
+                font-size: 1.2rem;
+                margin-top: -3%;
+                margin-bottom: -2%;
             }
 
+            .card-1 {
+                position: absolute;
+                top: 15%;
+                left: 1%;
+                z-index: 4;
+                background-color: white;
+                width: 29rem;
+                height: 38rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
 
-        }
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
 
-        .card-4 {
-            position: absolute;
-
-            width: 28rem;
-            height: 33rem;
-            top: 24%;
-            left: 36%;
-
-
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
             }
-        }
 
-        .card-5 {
-            position: absolute;
-            background-color: white;
-            z-index: 4;
-            width: 28rem;
-            height: 33rem;
-            top: 16%;
-            left: 51.5%;
+            .card-2 {
+                position: absolute;
+                top: 26%;
+                left: 8%;
+                background-color: white;
+                width: 29rem;
+                height: 38rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
+                cursor: pointer;
 
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    border: none;
+                }
 
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
             }
-        }
 
-        .card-6 {
-            position: absolute;
-            width: 28rem;
-            height: 33rem;
-            top: 24%;
-            left: 61% !important;
+            .card-3 {
+                position: absolute;
+                top: 15%;
+                left: 26%;
+                z-index: 4;
+                background-color: white;
+                width: 29rem;
+                height: 38rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
+                cursor: pointer;
 
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    border: none;
+                }
 
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
             }
-        }
 
-        .card-7 {
-            position: absolute;
-            z-index: 4;
-            background-color: #fff;
-            width: 28rem;
-            height: 33rem;
-            top: 16%;
-            left: 76.6%;
+            .card-4 {
+                position: absolute;
+                top: 26%;
+                left: 33%;
+                background-color: white;
+                width: 29rem;
+                height: 38rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
 
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
 
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
             }
-        }
 
-        .card-8 {
-            position: absolute;
+            .card-5 {
+                position: absolute;
+                top: 15%;
+                left: 51%;
+                z-index: 4;
+                background-color: white;
+                width: 29rem;
+                height: 38rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
 
-            width: 28rem;
-            height: 33rem;
-            top: 24%;
-            left: 86%;
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
 
-
-            &:hover {
-                z-index: 10;
-                transform: scale(1);
-                background-color: #111;
-                color: white;
-                border: none;
             }
-        }
 
-        .card-1 .imgja,
-        .card-2 .imgja {
-            margin-top: -1.5rem;
-        }
-        .card-3 .imgja,
-        .card-4 .imgja,
-        .card-5 .imgja,
-        .card-6 .imgja,
-        .card-7 .imgja,
-        .card-8 .imgja{
-            margin-top: 1rem;
-            
-        }
+            .card-6 {
+                position: absolute;
+                top: 26%;
+                left: 58%;
+                background-color: white;
+                width: 29rem;
+                height: 38rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
 
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    cursor: pointer;
+                    border: none;
+                }
+
+            }
+
+            .card-7 {
+                position: absolute;
+                top: 15%;
+                left: 76%;
+                z-index: 4;
+                background-color: white;
+                width: 29rem;
+                height: 38rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
+
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+
+            }
+
+            .card-8 {
+                // position: absolute !important;
+                visibility: hidden !important;
+                top: 21%;
+                right: 1.8%;
+                background-color: white;
+                width: 29rem;
+                height: 40rem !important;
+                border: #D3D3D3 solid 1px;
+                margin: 0;
+
+                &:hover {
+                    z-index: 10;
+                    transform: scale(1);
+                    background-color: #111;
+                    color: white;
+                    border: none;
+                }
+
+            }
+
+        }
 
     }
 
-    @media(max-width:1600px) {
-        .svg-ja {
-            top: -26% !important;
-            left: 104% !important;
+
+
+
+
+
+}
+
+@media(max-width:1600px) {
+    .svg-ja {
+        top: -26% !important;
+        left: 104% !important;
+    }
+
+    .arrow-icon {
+        top: -12.5% !important;
+    }
+}
+
+@media(max-width:1400px) {
+    .svg-ja {
+        top: -23% !important;
+        left: 101% !important;
+    }
+
+    .arrow-icon {
+        top: -9% !important;
+    }
+}
+
+@media (max-width:1300px) {
+    .au-text {
+        display: flex !important;
+        width: 60% !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 1 5%;
+
+        h1 {
+            font-size: 5rem !important;
         }
 
-        .arrow-icon {
-            top: -12.5% !important;
+        p {
+            font-size: 1.5rem;
         }
     }
 
-    @media(max-width:1400px) {
-        .svg-ja {
-            top: -23% !important;
-            left: 101% !important;
-        }
+    .svg-ja {
+        display: none;
+    }
 
-        .arrow-icon {
-            top: -9% !important;
+    .arrow-icon {
+        display: none;
+    }
+
+    .au-right {
+        margin-left: 5rem;
+        width: 80% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+
+    .divi {
+        .rec-pagination {
+            top: 90%;
+
         }
     }
 
-    @media (max-width:1300px) {
+}
+
+
+@media(max-width:1200px) {
+    .au-container {
         .au-text {
-            width: 60% !important;
+            width: 100% !important;
+            padding: 0 !important;
             align-items: center;
-            padding: 1 5%;
 
-            h1 {
-                font-size: 5rem !important;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
-        }
-
-        .svg-ja {
-            display: none;
-        }
-
-        .arrow-icon {
-            display: none;
-        }
-
-        .au-right {
-            margin-left: 5rem;
-            width: 80% !important;
-            justify-content: center !important;
-            align-items: center !important;
-        }
-
-
-        .divi {
-            .rec-pagination {
-                top: 90%;
-
-            }
-        }
-
-    }
-
-
-    @media(max-width:1200px) {
-        .au-container {
-            .au-text {
-                width: 100% !important;
-                padding: 0 !important;
-
-                .arrow-icon {
-                    left: 128%;
-                    top: 18% !important;
-                }
-            }
-        }
-    }
-
-    @media(max-width:1000px) {
-        .au-container {
-            .au-text {
-                .svg-ja {}
-
-                .arrow-icon {
-                    left: 132%;
-                    top: 19% !important;
-                }
+            .arrow-icon {
+                left: 128%;
+                top: 18% !important;
             }
         }
     }
 }
+
+@media(max-width:1000px) {
+    .au-container {
+        .au-text {
+            .svg-ja {}
+
+            .arrow-icon {
+                left: 132%;
+                top: 19% !important;
+            }
+        }
+    }
+}
+
 
 @media(max-width:900px) {
 
@@ -483,7 +507,7 @@
         .cardss {
             position: static !important;
             width: 100% !important;
-            height: 37rem !important;
+            // height: 37rem !important;
             display: flex !important;
 
         }
@@ -498,6 +522,7 @@
 
         .card-2 {
             position: static !important;
+            width: 28rem !important;
             margin-left: 1rem;
         }
     }

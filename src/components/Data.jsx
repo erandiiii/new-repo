@@ -51,6 +51,22 @@ export const navData = [
 ]
 
 export const models=[
+    {
+        id: 1,
+        name: 'Klea Gashi',
+        role: 'Model',
+        category: ['Model ', 'Photography ', 'Artist'],
+        date: '19 May 2022',
+        image: photo1, 
+      },
+      {
+        id: 2,
+        name: 'Arta Kalludra',
+        role: 'Model',
+        category: ['Model ', 'Photography ', 'Artist'],
+        date: '19 May 2022',
+        image: photo2, 
+      },
    
       {
         id: 3,
@@ -100,22 +116,7 @@ export const models=[
         date: '19 May 2022',
         image: photo2, 
       },
-      {
-        id: 1,
-        name: 'Klea Gashi',
-        role: 'Model',
-        category: ['Model ', 'Photography ', 'Artist'],
-        date: '19 May 2022',
-        image: photo1, 
-      },
-      {
-        id: 2,
-        name: 'Arta Kalludra',
-        role: 'Model',
-        category: ['Model ', 'Photography ', 'Artist'],
-        date: '19 May 2022',
-        image: photo2, 
-      },
+      
       
       
 ]
