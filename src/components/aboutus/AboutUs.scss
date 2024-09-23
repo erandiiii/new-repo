@@ -20,7 +20,7 @@
         width: 30%;
         margin-left: 4rem;
         margin-top: 10.5%;
-        margin-left: 8%;
+        // margin-left: 8%;
 
         h1 {
             font-family: 'Brown Sugar', sans-serif;
@@ -47,7 +47,7 @@
         padding: 0 5% !important;
         height: 100vh !important;
         padding: 0 !important;
-        margin-bottom : 2% !important;
+        margin-bottom: 2% !important;
         overflow: hidden !important;
 
         a {
@@ -146,8 +146,8 @@
 
             .rec-pagination {
                 position: absolute;
-                bottom: 18.5% !important;
-                left: 4.5% !important;
+                bottom: 27.5%;
+                left: 8.5%;
             }
 
             .rec-dot_active {
@@ -426,7 +426,7 @@
 @media (max-width:1300px) {
     .au-text {
         display: flex !important;
-        width: 60% !important;
+        width: 70% !important;
         align-items: center !important;
         text-align: center !important;
         padding: 1 5%;
@@ -458,7 +458,7 @@
 
     .divi {
         .rec-pagination {
-            top: 90%;
+            bottom: 8% !important;
 
         }
     }
@@ -469,9 +469,10 @@
 @media(max-width:1200px) {
     .au-container {
         .au-text {
-            width: 100% !important;
+            width: 800% !important;
             padding: 0 !important;
             align-items: center;
+            margin: 0 4% !important;
 
             .arrow-icon {
                 left: 128%;
@@ -484,7 +485,7 @@
 @media(max-width:1000px) {
     .au-container {
         .au-text {
-            .svg-ja {}
+
 
             .arrow-icon {
                 left: 132%;
@@ -496,78 +497,174 @@
 
 
 @media(max-width:900px) {
+    .au-right {
+        width: 100% !important;
+        padding: 0 !important;
+        margin-left: -5rem !important;
+
+    }
+
+    .rec-pagination {
+        top: 75% !important;
+        left: 42% !important;
+
+    }
 
     .divi {
-        .rec-pagination {
-            top: 75% !important;
-            left: 43% !important;
 
-        }
 
         .cardss {
             position: static !important;
-            width: 100% !important;
+            width: 90% !important;
             // height: 37rem !important;
             display: flex !important;
 
         }
 
+        .imgja {
+            width: 18rem;
+        }
+
         .card-1 {
 
             position: static !important;
-            width: 28rem !important;
-            margin-right: 1rem;
+            width: 26rem !important;
+            margin-right: 3rem !important;
 
         }
 
         .card-2 {
             position: static !important;
-            width: 28rem !important;
-            margin-left: 1rem;
+
+            width: 25rem !important;
+            margin-right: 3rem !important;
         }
     }
 }
 
+
 @media(max-width:700px) {
     .au-container {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .au-text {
+            margin: 0 !important;
+        }
+
         .au-right {
-            // width: 100% !important;
-            margin: 0;
+            width: 100% !important;
+            margin-left: 2.5rem !important;
+
 
             .divi {
+                margin: 0 !important;
+                width: 100% !important;
+
                 .rec-pagination {
                     top: 75% !important;
-                    left: 37% !important;
+                    left: 41% !important;
 
                 }
+
+            }
+
+            .rec-dot_active {
+                // position: absolute !important;
+                top: -22% !important;
+                left: -15%;
             }
 
             .cardss {
                 margin-left: 2rem;
-                // width: 18rem !important;
+                width: 18rem !important;
             }
 
-            .card-1 {
-                // width: 16rem !important;
+            .imgja {
+                width: 20rem !important;
+            }
+
+            .card-1,
+            .card-2,
+            .card-3,
+            .card-4,
+            .card-5,
+            .card-6,
+            .card-7 {
+                width: 45rem !important;
+            }
+
+        }
+    }
+}
+
+@media(max-width:609px) {
+    .au-container {
+        .au-right {
+            .divi {
+                width: 100% !important;
+
+                .rec-dot_active {
+                    position: absolute;
+                    top: -25% !important;
+                    left: -15% !important;
+                }
+
+                .rec-pagination {
+                    // position: absolute !important;
+                    left: 35% !important;
+                }
             }
         }
     }
 }
+
+@media(max-width:500px) {
+    .au-container {
+        .au-right {
+            .divi {
+                .rec-pagination {
+                    position: absolute !important;
+                    left: 31% !important;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .au-container {
+        .au-right {
+            .divi {
+                .rec-pagination {
+                    position: absolute !important;
+                    left: 26% !important;
+                }
+            }
+        }
+    }
+}
+
 
 
 @media(max-width:300px) {
 
     .au-container {
         .au-right {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+
             .divi {
                 .rec-pagination {
-                    left: 23% !important;
+                    left: 29% !important;
                 }
             }
         }
     }
 
     .au-text {
+        margin: 0 !important;
         align-items: center !important;
         text-align: center;
     }
@@ -575,6 +672,7 @@
     .cardss {
         margin-left: 3rem !important;
     }
+
 
 
 

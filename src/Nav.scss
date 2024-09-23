@@ -605,6 +605,13 @@
 
 @media(max-width:1010px) {
     .nav {
+        &.scrolled{
+            .mn-logo{
+                a{
+                    color: #111 !important;
+                }
+            }
+        }
         .nav-container {
 
             .nav-logo,
@@ -647,7 +654,7 @@
                             align-items: center;
                             display: flex;
                             gap: .3rem;
-                            color: #111;
+                            color: #fff;
                             font-family: 'Brown Sugar', sans-serif;
                         }
                     }
