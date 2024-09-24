@@ -449,7 +449,7 @@
     }
 
     .au-right {
-        margin-left: 5rem;
+        // margin-left: 5rem;
         width: 80% !important;
         justify-content: center !important;
         align-items: center !important;
@@ -478,6 +478,30 @@
                 left: 128%;
                 top: 18% !important;
             }
+            .au-right{
+                .divi{
+                    .rec-dot_active{
+                        position: absolute !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1109px){
+    .au-container{
+        .au-right{
+            .divi{
+                .rec-pagination{
+                    margin-left: 1.2rem;
+                }
+                .rec-dot_active{
+                    position: absolute;
+                    left: -15%;
+                    bottom: -5.9%;
+                }
+            }
         }
     }
 }
@@ -492,6 +516,12 @@
                 top: 19% !important;
             }
         }
+        .au-right{
+                margin-right: 5rem;
+                .divi{
+                    width: 100%;
+                }
+        }
     }
 }
 
@@ -500,18 +530,21 @@
     .au-right {
         width: 100% !important;
         padding: 0 !important;
-        margin-left: -5rem !important;
+        margin-left: 7rem !important;
 
     }
 
     .rec-pagination {
         top: 75% !important;
-        left: 42% !important;
+        left: 31.5% !important;
 
+    }
+    .rec-dot_active{
+        top: -7%;
     }
 
     .divi {
-
+        width: 80% !important;
 
         .cardss {
             position: static !important;
@@ -528,7 +561,7 @@
         .card-1 {
 
             position: static !important;
-            width: 26rem !important;
+            width: 30rem !important;
             margin-right: 3rem !important;
 
         }
@@ -554,17 +587,22 @@
 
         .au-right {
             width: 100% !important;
-            margin-left: 2.5rem !important;
+            margin-left: 5rem !important;
 
 
             .divi {
                 margin: 0 !important;
+                margin-left: 2rem !important;
+                
                 width: 100% !important;
 
                 .rec-pagination {
                     top: 75% !important;
-                    left: 41% !important;
+                    left: 31% !important;
 
+                }
+                .rec-dot_active{
+                    top: -7% !important;
                 }
 
             }
@@ -603,16 +641,24 @@
         .au-right {
             .divi {
                 width: 100% !important;
+                margin-left: 2rem !important;
 
                 .rec-dot_active {
                     position: absolute;
-                    top: -25% !important;
+                    top: -7% !important;
                     left: -15% !important;
                 }
 
                 .rec-pagination {
                     // position: absolute !important;
-                    left: 35% !important;
+                    left: 23.5% !important;
+                }
+                .imgja{
+                    // width: 100% !important;
+                    
+                }
+                .card-1{
+                    width: 40rem !important;
                 }
             }
         }
@@ -622,11 +668,24 @@
 @media(max-width:500px) {
     .au-container {
         .au-right {
+            margin: 0 !important;
+            // margin-left: 2rem !important;
             .divi {
+                // width: 100% !important;
+                // margin-left: 3rem !important;
                 .rec-pagination {
-                    position: absolute !important;
-                    left: 31% !important;
+                    // position: absolute !important;
+                    left: 28% !important;
                 }
+                .rec-dot_active{
+                    position: absolute !important;
+                    top: -7% !important;
+                    bottom: 20px !important;
+                }
+                
+            }
+            .card-1{
+                width: 400px!important;
             }
         }
     }
@@ -635,11 +694,21 @@
 @media(max-width:400px) {
     .au-container {
         .au-right {
+            margin: 0 !important;
             .divi {
+                width: 100% !important;
+                margin: 0 !important;
+                margin-left: 1.5rem !important;
                 .rec-pagination {
                     position: absolute !important;
-                    left: 26% !important;
+                    left: 20% !important;
                 }
+            }
+            .cardss{
+                width: 400px !important;
+            }
+            .card-1{
+                width: 400px !important;
             }
         }
     }
@@ -654,10 +723,14 @@
             width: 100% !important;
             margin: 0 !important;
             padding: 0 !important;
+            .divi{
+                width: 100% !important;
+                margin: 0 !important;
+            }
 
             .divi {
                 .rec-pagination {
-                    left: 29% !important;
+                    left: 19% !important;
                 }
             }
         }
