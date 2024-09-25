@@ -526,7 +526,7 @@
                 .divi {
                     padding-left: 10rem !important;
 
-                    .rec-dot_active {}
+                   
                 }
             }
         }
@@ -556,7 +556,7 @@
                 width: 100% !important;
                 padding-left: 10rem !important;
 
-                .rec-pagination {}
+               
 
                 .rec-dot_active {
                     position: absolute;
@@ -605,13 +605,6 @@
             }
         }
 
-        .au-right {
-
-            // margin-right: 5rem;
-            .divi {
-                // width: 100%;
-            }
-        }
     }
 }
 
@@ -625,13 +618,13 @@
             padding-right: 6rem !important;
 
             .rec-pagination {
-                top: 70% !important;
-                padding-left: 13.5rem;
+                top: 74% !important;
+                padding-left: 15rem;
             }
 
             .rec-dot_active {
-                left: 195px !important;
-                top: -53% !important;
+                left: 218px !important;
+                top: -49.7px !important;
             }
 
 
@@ -672,12 +665,13 @@
             .divi {
                 .rec-pagination {
                     left: 43% !important;
+                    top: 74% !important;
                     padding: 0 !important;
                 }
 
                 .rec-dot_active {
                     left: -15% !important;
-                    top: -9px !important;
+                    top: -9.5px !important;
                 }
             }
         }
@@ -750,6 +744,7 @@
 
             .divi {
                 width: 100% !important;
+                padding: 0 !important;
                 // margin-left: 2rem !important;
 
                 .rec-dot_active {
@@ -760,16 +755,15 @@
 
                 .rec-pagination {
                     // position: absolute !important;
-                    left: 37% !important;
+                    left: 38% !important;
                 }
 
-                .imgja {
-                    // width: 100% !important;
-
-                }
+              
+               
 
                 .card-1 {
-                    // width: 40rem !important;
+                    max-width: 400px !important;
+                  
                 }
             }
         }
@@ -790,7 +784,7 @@
                 // margin-left: 3rem !important;
                 .rec-pagination {
                     // position: absolute !important;
-                    left: 33% !important;
+                    left: 35.5% !important;
                 }
 
                 .rec-dot_active {
@@ -821,12 +815,14 @@
 
             .divi {
                 width: 100% !important;
+                padding: 0 !important;
+                // margin-left:  1rem !important;
 
 
                 // margin-left: 1.5rem !important;
                 .rec-pagination {
                     position: absolute !important;
-                    left: 28% !important;
+                    left: 32.5% !important;
                 }
 
                 .rec-dot_active {
@@ -834,16 +830,10 @@
                 }
             }
 
-            .cardss {
-                // width: 400px !important;
-                // display: none !important;
-
-            }
-
             .card-1 {
                 padding: 0 !important;
-                margin: 0 !important;
-                width: max(20rem, 25vh) !important;
+                // margin: 0 !important;
+                
                 border-left: 1px solid lightgray !important;
             }
         }
@@ -858,21 +848,33 @@
         .au-right {
             width: 100% !important;
             margin: 0 !important;
-            padding: 0 !important;
+            padding: 0 .1rem !important;
 
             .divi {
                 width: 100% !important;
-                margin: 0 !important;
+                // padding-left: .5rem !important;
+
+                .card-1{
+                    left: -2rem !important;
+                    padding: 0 !important;
+                    margin:  0 !important;
+                    
+                }
             }
 
             .divi {
                 .rec-pagination {
-                    left: 20% !important;
+                    left: 25% !important;
                 }
 
                 .rec-dot_active {
                     top: -9px !important;
                 }
+                .dydPIA{
+                    margin: 0 !important;
+                    
+                }
+               
             }
         }
     }
@@ -883,9 +885,9 @@
         text-align: center;
     }
 
-    .cardss {
-        // margin-left: 3rem !important;
-    }
+ 
+    
+    
 
 
 
