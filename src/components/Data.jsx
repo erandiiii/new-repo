@@ -1,5 +1,7 @@
 import photo1 from '../assets/au-card1.png'
 import photo2 from '../assets/au-card2.png'
+import picture1 from '../assets/picture1.png'
+import picture2 from '../assets/picture2.png'
 
 export const navData = [
     {
@@ -146,4 +148,23 @@ export const aboutUs = [
         ]
 
     }
+]
+
+export const tdomData = [
+  {
+    id:1,
+    picture:picture1
+  },
+  {
+    id:2,
+    picture:picture2
+  },
+  {
+    id:3,
+    picture:picture1
+  },
+  {
+    id:4,
+    picture:picture2
+  }
 ]
